@@ -80,7 +80,7 @@ title: DJ Ricco
 	
 
 {% for post in site.posts %}
-  {{ post }}
+  {{ post.content }}
 {% endfor %}
 
 
