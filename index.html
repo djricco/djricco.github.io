@@ -20,11 +20,54 @@
 
 </head>
 <body>
+  <style type="text/css">
+
+  #logo {
+    width: 90%;
+  }
+
+  @media (min-width: 800px) {
+    #logo {
+      width: 780px;
+    }
+  }
+
+  h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+      letter-spacing: -.1rem;
+  }
+
+  .social .icon {
+      width: 28px;
+      height: 26px;
+      display: inline-block;
+      background: url(images/social.png) center center no-repeat;
+      margin: 0;
+      vertical-align: middle;
+  }
+
+  .instagram .icon {
+      background-position: -28px 0;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;  
+  }
+
+  </style>
 <div class="bg">
-	<img src="images/logo.svg">
+	<img id="logo" src="images/logo.svg">
 	<div style="margin-top: 100px">
 		<h1 style="color: #fff;">contato: 11 98292 6242</h1>
-  	</div>
+  </div>
+  <div class="social instagram">
+    <a href="https://www.instagram.com/_djricco/" target="_blank">
+      <span class="icon"></span>
+      <span class="title">_djricco</span>
+    </a>
+  </div>
 </div>
 </body>
 </html>
