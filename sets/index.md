@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+---
+title: DJ Ricco
+---
+
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -11,12 +14,12 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <link rel="icon" type="image/png" href="/images/favicon.ico">
 
 </head>
 <body>
@@ -42,18 +45,13 @@
       width: 28px;
       height: 26px;
       display: inline-block;
-      background: url(images/social.png) center center no-repeat;
+      background: url(/images/social.png) center center no-repeat;
       margin: 0;
       vertical-align: middle;
   }
 
   .instagram .icon {
       background-position: -28px 0;
-  }
-
-  .sound .icon {
-      background-position: -111px 0;
-      width: 30px;
   }
 
   a {
@@ -63,23 +61,29 @@
 
   </style>
 <div class="bg">
-	<img id="logo" src="images/logo.svg">
-	<div style="margin-top: 100px">
-		<h1 style="color: #fff;">contato: 11 98292 6242</h1>
+	<img id="logo" src="/images/logo.svg">
+  <div class="row" style="margin-bottom: 15px;">
+    <div class="six columns">
+      <div style="color: #fff;">
+        contato: 11 98292 6242
+      </div>
+    </div>
+    <div class="six columns">
+      <div class="social instagram">
+        <a href="https://www.instagram.com/djricco_oficial/" target="_blank">
+          <span class="icon"></span>
+          <span class="title">_djricco</span>
+        </a>
+      </div>
+    </div>
   </div>
-  <div class="social instagram">
-    <a href="https://www.instagram.com/djricco_oficial/" target="_blank">
-      <span class="icon"></span>
-      <span class="title">_djricco</span>
-    </a>
-  </div>
+	
 
-  <div class="social sound" style="margin-top: 10px">
-    <a href="/sets/" target="_blank">
-      <span class="icon"></span>
-      <span class="title">ouça meus sets</span>
-    </a>
-  </div>
+{% for post in site.posts %}
+  {{ post }}
+{% endfor %}
+
+
 </div>
 </body>
 </html>
