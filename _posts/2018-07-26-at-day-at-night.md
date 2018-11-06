@@ -1,4 +1,5 @@
 ---
+layout: none
 title:  "At Day At Night"
 date:   2018-07-26 14:49:11 -0300
 categories: sets
